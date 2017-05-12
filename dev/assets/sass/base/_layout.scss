@@ -1,0 +1,18 @@
+body{
+  margin:0;
+  list-style: none;
+  padding:0;
+  header.masthead {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    z-index: 1;
+    background:#111;
+  }
+  .site-wrapper.topMargin {
+    //content: '';
+    display: block;
+    height: 100px;
+    position: relative;
+  }
+}

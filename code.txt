@@ -1,0 +1,34 @@
+<script type="text/javascript">
+  var page = document.body;
+  var container = document.createElement('div');
+  var nav = document.createElement('div');
+  var links =
+              //{ref:'studio', url:'/studio/', title:'Compose it, Record it, Mix it!'},
+              {ref:'events', url:'events/', title:'Let us help you plan your next event'};
+
+      createNav(),createCanvas();
+
+  function createCanvas(){
+    //var wrapper = document.getElementById('wrapper');
+    container.setAttribute('class', 'container');
+    container.setAttribute('id', 'wrapper');
+    page.appendChild(container);
+  }
+
+  function createNav(){
+    nav.setAttribute('class', 'nav');
+    nav.setAttribute('id', 'nav');
+    page.appendChild(nav);
+    navElems();
+  }
+
+  function navElems(){
+    console.log('Load nav');
+
+    var elems = '<ul>' +
+        '<li class=""> <a href="' + links.url +' ">' + links.ref + '</a> </li>' +
+        //'<li class=""> <a href="#">Events</a> </li>' +
+        '</ul>';
+    nav.innerHTML = elems ;
+  }
+</script>

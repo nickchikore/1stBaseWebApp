@@ -1,0 +1,22 @@
+body{
+  font-family: $nav-font;
+}
+
+h1{
+  //font-size: 2em;
+}
+h2,dt{
+  font-size: 1.5em;
+}
+h3{
+  font-size:1.25em;
+  letter-spacing: 0.8em;
+}
+h4, dd {
+  font-size:1em;
+  line-height: 1.25em;
+  letter-spacing: 0.125em;
+}
+dt, dd{
+  margin-top:1em;
+}

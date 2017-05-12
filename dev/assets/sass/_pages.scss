@@ -1,0 +1,11 @@
+.page{
+  text-align:left;
+  opacity:0;
+  &.active{
+    opacity:1;
+    transition-delay:150ms;
+    transition: 200ms opacity ease-in;
+    position: relative;
+    top: 50px;
+  }
+}
